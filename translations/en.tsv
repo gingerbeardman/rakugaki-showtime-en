@@ -1,0 +1,325 @@
+# English for the game's body text: japanese<TAB>english[<TAB>l|c|r[<TAB>disc]].
+# disc: a shorter English for the disc patch (tools/en_disc.py), where a string has no more room
+# than its Japanese bytes (an ASCII letter takes 1 byte, a Japanese character 2).
+# ASCII draws as proportional half-width glyphs, other characters as the game's 16 px glyphs, \t
+# jumps to the next 16 px column. tools/en_disc.py --report lists every string's room.
+#
+# A message the game splits over two lines is translated line by line; a line used by two messages
+# ("ささっていません。", "されていません。") has to read right in both.
+
+# ---- memory card (ARA.BIN 0xce884..) ----
+つづける	Continue
+やめる	Quit
+メモリーカードがさしこみロ１に	The memory card in slot 1
+ささっていません。	is not inserted.
+メモリーカードが	The memory card
+うわがきセーブします。	Saving over old data.
+うわがきセーブちゅうです。	Saving over old data...
+セーブしゅうりょうしました。	Save complete.
+セーブがしゅうりょうしました。	Save complete.
+セーブにしっぱいしました。	Save failed.
+データがこわれています。	The data is corrupted.
+うわがきしますか？	Overwrite?
+ＹＥＳ＝Ｏ：ＮＯ＝×	Yes = O   No = ×
+メモリーカードがしょきか	The memory card is not
+されていません。	formatted.
+されていません。しょきかしますか？	formatted. Format it now?
+しょきかちゅうです。	Formatting...
+しょきかがおわりました。	Format complete.
+しょきかにしっぱいしました。	Format failed.
+ファイルがありません。	No save file found.
+よみこみがおわりました。	Load complete.
+ロードにしっぱいしました。	Load failed.
+オートロードします。	Autoloading.
+オートセーブします。	Autosaving.
+オートロードできませんでした。	Could not autoload.
+メモリーカードにあきブロックが	Not enough free blocks
+たりません。	on the memory card.		on memory card.
+セーブします。	Saving.
+ロードします。	Loading.
+メモリーカード、コントローラの	Do not remove or insert the
+ぬきさしはしないでください。	memory card or controller.
+チェックちゅうです。	Checking...
+メモリーカードがぬかれました。	The memory card was removed.
+メモリーカードがさしかえられま	The memory card has been
+した。セーブしますか？	changed. Save now?
+ここではセーブができませんが	You cannot save here.
+よろしいですか？	Is that OK?
+１Ｐ	1P
+２Ｐ	2P
+３Ｐ	3P
+４Ｐ	4P
+
+# ---- labels (ARA.BIN 0x3a00c); the numbers are drawn into the full-width spaces ----
+# シスレベ / ゲーレベ: literal guesses, to check on screen.
+なんいど：	Difficulty:
+シスレベ：	Sys level:
+ゲーレベ：	Game level:
+コンティ：	Continues:
+ライフ　：　　　％	Life\t\t\t：　　　％
+トータル：　　　％	Total\t\t\t：　　　％
+
+# ---- restart prompt (ARA.BIN 0xd01a4) ----
+リスタート？	Restart?
+ＹＥＳ	Yes
+ＮＯ	No
+
+# ---- characters and teams (ARA.BIN 0x5cd48); the game centres names, so c keeps them centred ----
+# Names romanised (simplified Hepburn, no macrons), not translated: ユキヲ is Yukiwo (the game writes ヲ).
+Ａチーム	Team A	c
+Ｂチーム	Team B	c
+Ｃチーム	Team C	c
+ほうだいザコ	Hodai Zako	c
+エクスカリバ	Ekusukariba	c
+ハヤテ	Hayate	c
+ゴッドハンド	Goddo Hando	c
+ダディ	Dadi	c
+マム	Mamu	c
+リロ	Riro	c
+まりな	Marina	c
+チョースケ	Chosuke	c
+エスパーけん	Esupa Ken	c
+ジョンＭｋ－２	Jon Mk-2	c
+ウルトラジョニー	Urutora Joni	c
+ジョンカリバ	Jonkariba	c
+ザコ	Zako	c
+つぼはち	Tsubohachi	c
+ピータン	Pitan	c
+ササミ	Sasami	c
+ユキヲ	Yukiwo	c
+ＤＲＡＷ	DRAW	c
+ＬＯＳＥ	LOSE	c
+ＷＩＮ♪	WIN♪	c
+
+# ---- data the game builds numbers from (not text) ----
+　　０	=
+０１２３４５６７８９	=
+
+# ---- team, taunts and tips (ARA.BIN 0xd0364); a tip's second line is shared, so it reads after both first lines ----
+Ｄチーム	Team D	c
+まだまだあまいな	Still too soft!
+ちょっとてかげんしてやろう	I'll go easy on you.
+なかなかやるな	Not bad at all.
+ちょっとホンキだしてやるか	Time to get serious.
+スマイリーボールを	Use the Smiley Ball
+アイテムを	Use your items		Use items
+つかいこなそう！	like a pro!
+たくさんのテキと	Take on lots
+たたかおう！	of enemies!
+
+# ---- defeat messages (ARA.BIN 0xd0768); はホシになった follows a name ----
+いまここに　ちからつきる	Here my strength runs out.
+キミのことはわすれない。。。	We'll never forget you...
+はホシになった	became a star.
+シしてシカバネひろうものなし	Dead, and none to mourn.
+オマエはよわかった	You were weak.
+グッバイフォーエバー	Goodbye forever.
+だいおうじょう	A peaceful passing.		Peaceful end.
+なんだそのザマは？	What a sorry sight!
+おまえのチカラはこんなものか	Is that all you've got?
+プレイヤーがわるかったな	Blame the player.
+きみにナミダはにあわない	Tears don't suit you.
+アンタ、まぶしかったぜ	You were dazzling.
+おやおや、どうしたんだい？	Oh dear, what happened?
+またオマエか。。。	You again...
+だれにでもミスはある	Everyone makes mistakes.		Everyone slips up.
+あきらめるのはまだはやい	Don't give up yet.
+オマエらしいよ	So typical of you.		So like you.
+いいわけは　いらない	No excuses.
+わるあがきは　よせ	Stop struggling.
+みぐるしいぜ	How unsightly.
+みごとな　しにざまだ	A splendid death.
+ゴー　トゥー　ヘブン	Go to heaven.
+やすらかにねむれ	Rest in peace.
+だれもキミを　せめたりしない	No one blames you.
+ラクガキショータイム	Rakugaki Showtime	c
+
+# ---- menus (HAGECHO.BIN) ----
+プッシュスタートボタン	Push Start Button	c
+ステージセレクト	Stage Select
+レベルセレクト	Level Select
+けってい	Confirm
+レベル／	Level/
+ーーーー	=
+イージー	Easy
+ノーマル	Normal
+ハード	Hard
+スーパー	Super
+ランダム	Random	c
+スタート	Start
+アイテムセレクト	Item Select
+ＯＮ	ON
+ＯＦＦ	OFF
+ＯＫ？	OK?
+
+# ---- names split over two lines (HAGECHO.BIN 0x81418), romanised like the full names ----
+エスパー	Esupa
+けん	Ken
+チョー	Cho
+スケ	suke
+エクス	Ekusu
+カリバ	kariba
+ウルトラ	Urutora
+ジョニー	Joni
+ジョン	Jon
+ほうだい	Hodai
+Ｍｋー２	Mk-2
+ゴット	Gotto
+ハンド	Hando
+ジョンＭｋー２	Jon Mk-2	c
+
+# ---- items; the count follows ×, so r keeps × where it was ----
+イワ	Rock
+ブラックホール	Black Hole
+ＩＣＢＭ	ICBM
+グレネード	Grenade
+ジライ	Mine
+ホーミングミサイル	Homing Missile
+スマイリーボール　×	Smiley Ball ×	r
+はいちアイテム　　×	Placed items ×	r
+
+# ---- button setup ----
+タイジンなげ	Throw at foe
+タイブツなげ	Throw at object
+ジャンプ	Jump
+トクシュわざ	Special move
+ひだりかいてん	Turn left
+みぎかいてん	Turn right
+みしよう１	Unused 1
+みしよう２	Unused 2
+
+# ---- level clear and unlocks (HAGECHO.BIN 0x1f9b54); 　ゲット！！ follows a name ----
+レベルイージー　クリアー！	Level Easy cleared!
+レベルノーマル　クリアー！	Level Normal cleared!
+レベルハード　クリアー！	Level Hard cleared!
+レベルスーパー　クリアー！	Level Super cleared!
+　ゲット！！	 unlocked!!
+もっとがんばると	Keep at it and
+ほかのキャラもゲットできるよ！！	you can unlock other characters too!!		you can unlock more characters!!
+オールコンプリート	All Complete
+おめでとう！！	Congratulations!!		Well done!!
+
+# ---- training: another routine draws these, with inline codes (0P..00 highlight, 1D 1A 1X 1O button icons); left until it is traced ----
+でしてい	=
+もくひょうのほうこうに	=
+にして	=
+もくひょうのほうこうと	=
+ボタンを	=
+ホーミングいどうちゅう	=
+ボタンで	=
+スマイリーボールが	=
+ひかったときに	=
+まえドライブスーパースマイリー	=
+うしろドライブスーパースマイリー	=
+にたいしてもかのう	=
+
+# ---- victory quotes (HAGECHO.BIN 0x225b50), 8 characters of Japanese each; キャラがちやなっ is a guess ----
+　ハード	Hard	r
+　ノーマル	Normal	r
+　イージー	Easy	r
+マジすごいよキミ	You're seriously good!		You're really good!
+ザコマスターっす	I'm the Zako Master!		I'm Zako Master!
+イェ～イ！	Yeah!
+サルっていうな！	Don't call me a monkey!		I'm not a monkey!
+やるじゃねーか！	Not bad, huh!
+けっ！シケてるゼ	Tch! How lame.
+ズルやりしたろ？	You cheated, right?
+おかしいよオマエ	You're crazy.
+なげなどいらぬ！	Who needs throws!
+カビラじゃねーぞ	I'm not Kabira!
+シュヤクはおれだ	I'm the star here.
+まだまだいけるゼ	I can keep going!
+オレ、キＯガイ？	Am I cr*zy?
+オゥイェァワォ！	Oh yeah, wow!
+きらわれた？	Do they hate me?		They hate me?
+もっとつよいハズ	I should be stronger.		Should be stronger
+よわいよチミィ～	You're weak, kiddo~
+とーぜんよゲヘヘ	Naturally! Heh heh.
+たりないわァン	Not enough, ahn~		Need more, ahn~
+んふ、ダメねぇ～	Mm-hm, no good~
+あたしのトリコね	You're under my spell.		You're mine now.
+みたわね～？！	You saw, didn't you?!		You saw that?!
+あ～んダメダメェ	Ahh, no no no~
+みんなあげちゃう	I'll give you everything.		Take it all!
+　　いいねぇ～	Nice~	c
+ブレイコー！おぇ	Party time! Urp.
+　もぅサイコー！	Simply the best!	c
+　　やったねっ♪	We did it♪	c
+おつかれさまっ☆	Good work☆
+チビっていうな！	Don't call me short!		I'm not short!
+どいつもザコだな	All small fry.
+これっぽっちかよ	Is that all?
+むぅ！オトコだ！	Hmm! A real man!
+どこがカラテだ？	Call that karate?
+あつかいずらいネ	Tricky to handle.
+さすがムテキロボ	The invincible robot!		Invincible robot!
+ゆけトラよろしく	Go, like a tiger!
+スガやんごめんね	Sorry, Suga-yan.
+ニンともカンとも	Nin-credible!
+なかなかでゴザル	Most impressive.
+じつはツライかも	Actually, it's tough.		It's tough, really
+ギンガはワガモノ	The galaxy is mine!
+チキュウをシハイ	I rule the Earth!
+バウォッホホホゥ	Bwohohohoh!
+みなおしたでぇ～	I'm impressed~
+　もうちょいや！	Almost there!	c
+キャラがちやなっ	Wrong character, huh?		Wrong character?
+　やるじゃん！！	Not bad!!	c
+　　イイカンジ？	Feeling good?	c
+　　まだまだだな	Still a way to go.	c	Still a way to go
+よくぞきわめた！	You've mastered it!
+もはやムテキなり	Now truly invincible!		Truly invincible!
+つかれたね	Tiring, huh?		Tired, huh?
+
+# ---- staff credits (HAGECHO.BIN 0x225f8c): roles translated, names romanised in Japanese order; ／ and ＆ kept full-width in case the credits routine splits on them ----
+さんくず／がんぞー	Thanks／Ganzo
+しゃちょー／まえがわ　まさと	President／Maegawa Masato
+おかねのかかりよ／はるこ	Money Lady／Haruko
+テストプレイヤー／なみ　＆　ひさし	Test Players／Nami ＆ Hisashi
+こうかおん／むらた	Sound Effects／Murata		Sound FX／Murata
+おんがく／のん　＆　やまなか　としや	Music／Non ＆ Yamanaka Toshiya
+グラフィッカ～／やすだ　かずお	Graphics～／Yasuda Kazuo
+テクスチャーデザイン／かながえ	Texture Design／Kanagae
+モデリング／かふに	Modeling／Kafuni
+らくがき／ごー	Doodles／Go
+あだうちデザイナー／なおきまん	Revenge Designer／Naokiman
+クールキャラクタークリエイター／はん	Cool Character Creator／Han
+こどうぐ＆カメラマン／ふくりゅう	Props ＆ Camera／Fukuryu
+かえりがおそくてごめんねプログラマー／まつ	Sorry-I'm-Late-Home Programmer／Matsu
+キャラクタープログラム／うきょ	Character Programming／Ukyo
+１＆４だいめあばれんぼうリーダー／きくち　てつひこ	1st ＆ 4th Rampaging Leader／Kikuchi Tetsuhiko
+ジョンカリバ／くさお　たけし	Jonkariba／Kusao Takeshi
+エクスカリバ／なかやま　まなみ	Ekusukariba／Nakayama Manami
+チョースケ／きしの　ゆきまさ	Chosuke／Kishino Yukimasa
+ハヤテ／おきあゆ　りょうたろう	Hayate／Okiayu Ryotaro
+リロ／すみとも　ゆうこ	Riro／Sumitomo Yuko
+マム／かみむら　のりこ	Mamu／Kamimura Noriko
+ダディ　＆　ジョニー　＆　エスパーけん／ケン・サンダース	Dadi ＆ Joni ＆ Esupa Ken／Ken Sanders
+ツボハチ　＆　ザコ／たつた　なおき	Tsubohachi ＆ Zako／Tatsuta Naoki
+ピータン　＆　ゴッドハンド／のだ　じゅんこ	Pitan ＆ Goddo Hando／Noda Junko
+ササミ／すずき　まりこ	Sasami／Suzuki Mariko
+ユキヲ／みどりかわ　ひかる	Yukiwo／Midorikawa Hikaru
+あにめーしょんせいさく／こみやま　ともはる	Animation Production／Komiyama Tomoharu
+はいけいれいあうと／いわさ　ただし	Background Layout／Iwasa Tadashi
+きはら　ゆうじ	Kihara Yuji
+びじゅつかんとく／かりや　ひろみ	Art Director／Kariya Hiromi
+せいさくしんこう／タカハシ　ダイスケ	Production Manager／Takahashi Daisuke
+せいさくデスク／ひらた　ひろあき	Production Desk／Hirata Hiroaki
+しきさいせってい・いろしてい／なべしま　かずこ	Colour Design／Nabeshima Kazuko
+どうが／マエダ　ヒトミ　＆　イガリ　マドカ　＆　まちだ　こうすけ　＆　カワイ　マコト　＆　アンジキ　ケイ　＆　おつづき　まなぶ　＆　セレンギ　フェレンギ　フェージン　クアーク　＆　アダチ　アキヒコ　＆　カオス　プロジェクト　＆　スタジオ　シータ	In-between Animation／Maeda Hitomi ＆ Igari Madoka ＆ Machida Kosuke ＆ Kawai Makoto ＆ Anjiki Kei ＆ Otsuzuki Manabu ＆ Serengi Ferengi Fejin Kuaku ＆ Adachi Akihiko ＆ Chaos Project ＆ Studio Theta
+どうがけんさ／まえだ　ひとみ	In-between Check／Maeda Hitomi
+げんが／ウチダ　タカシ　＆　タバ　シュンジ　＆　きよまる　さとる　＆　さとう　たか	Key Animation／Uchida Takashi ＆ Taba Shunji ＆ Kiyomaru Satoru ＆ Sato Taka
+えコンテ・えんしゅつ・さくがかんとく／あらき　ひでき	Storyboard, Direction, Animation Director／Araki Hideki
+ステキな　しゃちょー／ふくしま　やすひろ	Wonderful President／Fukushima Yasuhiro
+グレイトな　えぐぜくてぃぶ　ぷろでゅーさー／ちだ　ゆきのぶ　＆　ほんだ　けいじ	Great Executive Producers／Chida Yukinobu ＆ Honda Keiji
+イカす　ぷろでゅーさー／きくもと　ゆうち　＆　なるさわ　りえ	Cool Producers／Kikumoto Yuchi ＆ Narusawa Rie
+デバッガー／のなか　しのぶ　＆　もりうち　せいいち　＆　あそう　ともひろ　＆　なりきよ　えみ　＆　おざわ　なおみ　＆　やまもと　けんいち　＆　さとう　さとし　＆　さくま　てるよ　＆　ふち　ひろゆき　＆　かがや　ようこ	Debuggers／Nonaka Shinobu ＆ Moriuchi Seiichi ＆ Aso Tomohiro ＆ Narikiyo Emi ＆ Ozawa Naomi ＆ Yamamoto Kenichi ＆ Sato Satoshi ＆ Sakuma Teruyo ＆ Fuchi Hiroyuki ＆ Kagaya Yoko
+タダの　ゆかいななかまたち／やまぎし　よしのり　＆　すいのう　ひとし　＆　わたなべ　やすひと　＆　いぬづか　たいち　＆　みやけ　ゆう　＆　しぶや　ゆきひろ　＆　ふじもと　ひろき　＆　さいとう　ようすけ　＆　わち　しんじ　＆　こばやし　だいすけ　＆　あんどう　たけひろ　＆　しばはら　ひろか　＆　こばやし　えりこ	Just Our Fun Friends／Yamagishi Yoshinori ＆ Suino Hitoshi ＆ Watanabe Yasuhito ＆ Inuzuka Taichi ＆ Miyake Yu ＆ Shibuya Yukihiro ＆ Fujimoto Hiroki ＆ Saito Yosuke ＆ Wachi Shinji ＆ Kobayashi Daisuke ＆ Ando Takehiro ＆ Shibahara Hiroka ＆ Kobayashi Eriko
+きゅうきょくの　アートワークたんとう／おおいし　なおき	Ultimate Artwork／Oishi Naoki
+たのもしい　テクニカルさぽーとのみなさん／さとう　ひろし　＆　よねやま　ひでき	Reliable Technical Support／Sato Hiroshi ＆ Yoneyama Hideki
+まじめな　ソフトウエアさぽーとのみなさん／はなわ　てるひこ　＆　かの　けんじろう　＆　なかのめ　のりこ	Diligent Software Support／Hanawa Teruhiko ＆ Kano Kenjiro ＆ Nakanome Noriko
+やさしい　こうこくセンデンのみなさん／ふたみ　しんじ　＆　やまもと　ひでき　＆　おおさわ　むねひろ　＆　なんば　あきら　＆　よしかわ　るみ　＆　やまぎし　ほたか	Kind Advertising and PR／Futami Shinji ＆ Yamamoto Hideki ＆ Osawa Munehiro ＆ Namba Akira ＆ Yoshikawa Rumi ＆ Yamagishi Hotaka
+すごい　えいぎょうのヒトたち／かにえ　はじめ　＆　たぐち　こうじ　＆　かつらぎ　まさはる　＆　おおさき　ともよし　＆　たかだ　こうじ　＆　ふろ　ゆうけん　＆　のむら　としひで　＆　とだ　じゅん　＆　はばら　さおり	Amazing Sales People／Kanie Hajime ＆ Taguchi Koji ＆ Katsuragi Masaharu ＆ Osaki Tomoyoshi ＆ Takada Koji ＆ Furo Yuken ＆ Nomura Toshihide ＆ Toda Jun ＆ Habara Saori
+あそんでくれたキミ	And you, for playing		And you, the player
+かってくれたキミ	And you, for buying it		And you, the buyer
+トレジャー／エニックス　１９９９	Treasure／Enix 1999

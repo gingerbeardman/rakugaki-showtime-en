@@ -1,0 +1,8 @@
+work/
+__pycache__/
+*.bin
+*.cue
+*.chd
+*.iso
+*.img
+*.xdelta

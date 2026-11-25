@@ -1,0 +1,45 @@
+# English for the training mode's tips (HAGECHO.BIN entry 5, overlay s05dm; f_s05dm_8013118c draws
+# them), for the disc patch (tools/en_disc.py): offset<TAB>japanese<TAB>english.
+#
+# offset is the line's place in entry 5. Each page is a list of lines, each line centred, drawn in
+# 16 px units of 2 bytes. Inline codes, each one unit: {0P} blue, {0R} pink, {00} back to white
+# (a line starts white); {1O} {1A} {1X} {1D} a button icon. English is 8 px a letter, two to a unit,
+# so a code always starts on a unit: the patcher pads the text before a code with a space when it
+# is odd. No digit may start a unit (it reads as a code), so write numbers out. Lines may be longer
+# than the Japanese (the lines are repacked); keep them to about 34 letters.
+#
+# offset	japanese	english
+821c	もくひょうを{0P}ほうこうキー{00}でしてい	Pick a target with the {0P}D-pad{00}
+8244	{1D}ボタンで{0R}たいじんなげ{00}	{1D} to {0R}throw at an opponent{00}
+8260	{1A}ボタンで{0R}たいぶつなげ{00}	{1A} to {0R}throw at an object{00}
+827c	もくひょうのほうこうに	Hold the D-pad
+8294	ほうこうキーを{0P}いれっぱなし{00}にして	{0P}toward the target{00} and press
+82bc	{1D}ボタンで{0R}まえドライブなげ{00}	{1D} for a {0R}forward drive throw{00}
+82dc	もくひょうのほうこうと	Hold the D-pad
+82f4	ほうこうキーを{0P}ぎゃくにいれたまま{00}で	{0P}away from the target{00} and press
+831c	{1D}ボタンで{0R}うしろドライブなげ{00}	{1D} for a {0R}back drive throw{00}
+8340	{1X}ボタンで{0R}ジャンプ{00}	{1X} to {0R}jump{00}
+8358	ほうこうキーと{1X}ボタンを	The D-pad and {1X}
+8374	{0P}すばやく２かい{00}で	{0P}twice, quickly{00}, for a
+838c	{0R}ホーミングいどう{00}	{0R}homing dash{00}
+83a4	ホーミングいどうちゅう	In a homing dash,
+83bc	２かいめの{1X}{0P}ボタンおしっぱなし{00}で	{0P}hold{00} {1X} on the second press
+83e4	{0R}れんぞくホーミングいどう{00}	for a {0R}chain homing dash{00}
+8404	もういちど{1X}ボタンで	{1X} again for a
+841c	{0R}ホーミングキャンセル{00}	{0R}homing cancel{00}
+8438	{0P}ほうこうキーをいれずに{00}{1O}ボタンで	{0P}No D-pad{00}, just {1O}, for a
+8460	{0R}カウンター{00}	{0R}counter{00}
+8470	{0P}ギリギリまでひきつけて{00}{1O}ボタンで	{0P}At the last moment{00}, {1O} for a
+8498	{0R}どんぴしゃカウンター{00}	{0R}perfect counter{00}
+84b4	ほうこうキーと{1O}ボタンで	The D-pad and {1O} for
+84d0	{0R}キャラごとのアクション{00}	{0R}each character's action{00}
+84ec	スマイリーボールが	When the Smiley Ball
+8500	{0P}ひかったときになげる{00}と	{0P}glows, throw it{00} for a
+851c	{0R}スーパースマイリーアタック{00}	{0R}Super Smiley Attack{00}
+853c	ひかったときに	When it glows,
+854c	{0P}まえドライブでなげる{00}と	{0P}forward drive throw it{00} for a
+8568	{0R}まえドライブスーパースマイリー	{0R}Forward Super Smiley
+858c	{0P}うしろドライブでなげる{00}と	{0P}back drive throw it{00} for a
+85ac	{0R}うしろドライブスーパースマイリー	{0R}Back Super Smiley
+85d0	{0R}ホーミングいどう{00}は	{0R}Homing dashes{00} also
+85e8	{0P}スマイリーボール{00}にたいしてもかのう	work {0P}on the Smiley Ball{00}
