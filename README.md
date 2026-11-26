@@ -41,8 +41,8 @@ Copy the `.cue` next to the new `.bin`, and change the `FILE` line in the copy t
 
 | | |
 |---|---|
-| CRC32 | `1a0306e8` |
-| SHA-1 | `9bdb7c3686a7b5f09f4597d45cbc4288e9cc4164` |
+| CRC32 | `97f989b8` |
+| SHA-1 | `5a8ac2262e2b9f724fad034c5527bc08cebadef2` |
 
 It has been tested in the RetroArch PCSX ReARMed core.
 
